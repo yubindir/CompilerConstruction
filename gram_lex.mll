@@ -3,6 +3,7 @@
 	exception SyntaxError of string 
 }
 
+let comment_line = "//"([^ '\n' ]+)
 let id = ['a'-'z' 'A'-'Z' '_'] ['a'-'z' 'A'-'Z' '0'-'9' '_']*
 let int = '-'? ['0'-'9'] ['0'-'9']*
 let white = [' ' '\t']+
@@ -29,6 +30,7 @@ rule read =
 	| '=' {ASG}			| '&' {DEREF}		| "return" {RETURN}
 	| id {NAME}
 	
+	| comment_line {read lexbuf}
 	| white {read lexbuf}
 	| newline {read lexbuf}
 	| _ {raise (SyntaxError ("Unexpected char: " ^ Lexing.lexeme lexbuf))}
