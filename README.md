@@ -2,7 +2,8 @@
 
 ## Compiling and Running Tests
 
-There is a file called `makefile-1` in the main directory which you can run in your terminal as `./makefile-1`
+There is a file called `makefile-1` in the test directory which you can run in your terminal as `./makefile-1`
+Apologies in advance for not setting up a proper make file
 
 In the test folder there is a script called `./runtest`
 This would run all the tests and give a "Success" vs SyntaxError.
