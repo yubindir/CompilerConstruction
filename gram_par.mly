@@ -9,6 +9,7 @@
 %token WHILE
 %token IF ELSE
 %token ASG DEREF
+%token RETURN
 %token FUNC
 %token INT READINT PRINTINT
 %token IDENTIFY LET NEW
