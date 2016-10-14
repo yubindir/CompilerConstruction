@@ -1,0 +1,8 @@
+// Program that fails because of a syntax error
+main()
+{
+	// All instances of a must be in the form 'var a'
+	new a = 3;
+	a = a + 1;
+	a
+}
