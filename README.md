@@ -9,6 +9,10 @@ This would run all the tests and give a "Success" vs SyntaxError.
 
 You may need to run `chmod 755 ./makefile-1` and `chmod 755 ./runtest` if you are not permitted to run these files.
 
+### Note on the Tests
+
+Each test program is in one line, so if you would like to view the programs in a normal way, there is another folder called `nice layout` that has each test program in a readable fashion.
+
 ## Syntax and Structure of the Code
 
 ### Structure
