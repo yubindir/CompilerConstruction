@@ -1,0 +1,2 @@
+// Program that calls a recursive function infinitely
+recurse(){ fun var recurse(); } main(){ fun var recurse(); } 

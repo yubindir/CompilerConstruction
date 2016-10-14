@@ -1,0 +1,1 @@
+main() { new var mood = read_int(); if(var mood >= 0) { print_int(999); } else { print_int(111); } } // Program for an IF statement

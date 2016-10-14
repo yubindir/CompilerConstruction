@@ -1,0 +1,2 @@
+// Program that calculates a factorial
+main() { new var base = 1; new var number = read_int(); new var product = 1; while(var number >= base) { var product = var product * var number; var number =  var number - 1; } print_int(var product); } 
