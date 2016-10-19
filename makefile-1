@@ -1,3 +1,0 @@
-#!/bin/bash
-
-ocamlbuild -use-menhir -use-ocamlfind gram2_test.native
