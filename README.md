@@ -4,9 +4,7 @@
 
 Run `make` in the terminal to compile all the necessary files.
 
-Run the script called `./runtest` which will run all tests and give a "Success" vs SyntaxError. The script can be found in the test folder.
-
-You may need to run `chmod 755 ./makefile-1` and `chmod 755 ./runtest` if you are not permitted to run these files.
+Run the script called `runtest` with the command `./runtest`, which will run all tests and give a "Success" vs SyntaxError. The script can be found in the test folder. You may need to run `chmod 755 ./runtest` if you are not permitted to run the script.
 
 ### Note on the Tests
 
