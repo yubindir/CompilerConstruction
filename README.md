@@ -2,11 +2,9 @@
 
 ## Compiling and Running Tests
 
-There is a file called `makefile-1` in the test directory which you can run in your terminal as `./makefile-1`
-Apologies in advance for not setting up a proper make file
+Run `make` in the terminal to compile all the necessary files.
 
-In the test folder there is a script called `./runtest`
-This would run all the tests and give a "Success" vs SyntaxError.
+Run the script called `./runtest` which will run all tests and give a "Success" vs SyntaxError. The script can be found in the test folder.
 
 You may need to run `chmod 755 ./makefile-1` and `chmod 755 ./runtest` if you are not permitted to run these files.
 
