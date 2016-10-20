@@ -1,6 +1,7 @@
 open Gram_lex 
 open Lexing 
 open Printf
+open String
 
 let print_position lexbuf =   
 	let pos = lexbuf.lex_curr_p in   
@@ -13,10 +14,17 @@ let parse_with_error lexbuf =
 						 exit (-1) 
 	| Gram_par.Error ->  prerr_string "Parse error: ";
                          print_position lexbuf;
-                         exit (-1) 
+                         exit (-1)
 
-let _ = 
-	read_line() |>  Lexing.from_string  |> parse_with_error;  
+let load_file f =
+  let ic = open_in f in
+  let n = in_channel_length ic in
+  let s = String.create n in
+  really_input ic s 0 n;
+  close_in ic;
+  (s)
+
+let _ = read_line() |> String.trim |> load_file |> Lexing.from_string  |> parse_with_error;  
 	print_string("Successful Parsing");
 	print_newline ();
 
