@@ -1,0 +1,6 @@
+// arithmetic and logic
+main(){
+	var x = 4;
+	var y = 7;
+	var x + var y <= var x - var y;
+}

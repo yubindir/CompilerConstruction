@@ -1,0 +1,18 @@
+// Program that prints a fibonacci number
+main()
+{ 
+	var num1 = 0; 
+	var num2 = 1; 
+	var value = 5
+	 
+	var i = 1; 
+	while(var i <= var value) 
+	{ 
+		var temp = var num1 + var num2; 
+		var num1 = var num2; 
+		var num2 = var temp; 
+		var i = var i + 1; 
+	}
+
+	var num2;
+}
