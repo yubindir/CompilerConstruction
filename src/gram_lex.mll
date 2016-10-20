@@ -11,8 +11,8 @@ let newline = '\r' | '\n' | "\r\n"
 
 rule read = 
 	parse
-	| int {INT}		| "read_int" {READINT}	| "print_int" {PRINTINT}
-	
+	| int {INT (int_of_string (Lexing.lexeme lexbuf))}		
+	| "read_int" {READINT}	| "print_int" {PRINTINT}
 	| ';' {SEMICLN}		| ',' {COMMA}
 	| '{' {LBRACE}		| '}' {RBRACE}
 	| '(' {LBRACKET}	| ')' {RBRACKET}
