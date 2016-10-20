@@ -1,0 +1,6 @@
+// Complex arithmetic
+main(){
+	5 + 4 + 3;
+	10 * 3 / 6;
+	1 - 0 + 9;
+}

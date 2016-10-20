@@ -1,0 +1,4 @@
+// Simple addition
+main(){
+	7 + 3;
+}

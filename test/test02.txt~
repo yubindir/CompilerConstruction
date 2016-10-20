@@ -1,0 +1,1 @@
+main() { new var num1 = 0; new var num2 = 1; new var value = read_int(); print_int(num1); new var i = 1; while(var i <= var value) { print_int(num2); new var temp = var num1 + var num2; var num1 = var num2; var num2 = var temp; var i = var i + 1; } } // Program that prints a fibonacci sequence

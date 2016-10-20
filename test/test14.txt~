@@ -1,0 +1,12 @@
+// Simple if statement
+main(){
+	var x = 5;
+	var y = 5;
+	
+	if(var x == var y){
+		var x * var y;
+	}
+	else{
+		0;
+	}
+}
