@@ -1,2 +1,0 @@
-// Program that's the same as test 5 but actually correct
-main(){ new var a = 3; var a = var a + 1; var a }
