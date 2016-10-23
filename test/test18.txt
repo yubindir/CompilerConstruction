@@ -1,0 +1,9 @@
+// arithmetic and while
+main(){
+	
+	while(4+0-4){
+		5+4;
+		3+7;
+	}
+
+}

@@ -1,0 +1,9 @@
+// arithmetic and if
+main(){
+	if(5+4 <= 9){
+		9;
+	}
+	else{
+		0;
+	}
+}
