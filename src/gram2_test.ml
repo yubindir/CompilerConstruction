@@ -8,7 +8,7 @@ let print_position lexbuf =
 	eprintf "Pos %d:%d:%d\n" pos.pos_lnum pos.pos_bol pos.pos_cnum 
 
 let parse_with_error lexbuf =   
-	try Gram_par.start Gram_lex.read lexbuf with
+	try Gram_par.program Gram_lex.read lexbuf with
 	| SyntaxError msg -> prerr_string (msg ^ ": "); 
 						 print_position lexbuf;                        
 						 exit (-1) 
