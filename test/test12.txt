@@ -1,7 +1,0 @@
-// Simple if statement
-main(){
-	5 + 3;
-	8 - 2;
-	2 * 2;
-	4 / 2;
-}

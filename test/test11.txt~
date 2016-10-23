@@ -1,4 +1,0 @@
-// Simple addition and subtraction
-main(){
-	(7 + 3) - 5;
-}

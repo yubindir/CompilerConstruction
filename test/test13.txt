@@ -1,9 +1,0 @@
-// Simple while loop
-main(){
-	var x = 1;
-	var y = 10;
-
-	while(var x <= var y){
-		var x = var x + 1;
-	}
-}
