@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "============="
+echo "Parsing Tests"
+echo "============="
 
 echo "Small Test 01"
 echo " $(cat test01name.txt) " | ./../gram2_test.native
@@ -17,6 +20,7 @@ echo " $(cat test04name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 05"
+echo "This code was written to fail"
 echo " $(cat test05name.txt) " | ./../gram2_test.native
 
 echo " "
@@ -47,60 +51,50 @@ echo " "
 echo "Large Test 02"
 #echo " $(cat largetest02name.txt) " | ./../gram2_test.native
 
-echo " "
+echo "================ "
 echo "Evaluation Tests"
-echo " "
+echo "================ "
+
 echo "Small Test 11"
 echo " $(cat test11name.txt) " | ./../gram2_test.native
-echo " Expected Value: 10"
+echo " Expected Value: 3"
 
 echo " "
 echo "Small Test 12"
-echo " $(cat test12name.txt) " | ./../gram2_test.native
-echo " Expected Values: 8, 6, 4, 4"
+#echo " $(cat test12name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 13"
-echo " $(cat test13name.txt) " | ./../gram2_test.native
-echo "Not expected to work"
+#echo " $(cat test13name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 14"
-echo " $(cat test14name.txt) " | ./../gram2_test.native
-echo "Not expected to work"
+#echo " $(cat test14name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 15"
-echo " $(cat test15name.txt) " | ./../gram2_test.native
-echo "Not expected to work"
+#echo " $(cat test15name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 16"
-echo " $(cat test16name.txt) " | ./../gram2_test.native
-echo "Not expected to work"
+#echo " $(cat test16name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 17"
-echo " $(cat test17name.txt) " | ./../gram2_test.native
-echo "Not expected to work"
+#echo " $(cat test17name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 18"
-echo "Not Written"
-echo " $(cat test18name.txt) " | ./../gram2_test.native
-echo "Not expected to work"
+#echo " $(cat test18name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 19"
-echo "Not Written"
 #echo " $(cat test19name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Small Test 20"
-echo "Not Written"
 #echo " $(cat test20name.txt) " | ./../gram2_test.native
 
 echo " "
 echo "Large Test 03"
-echo " $(cat largetest03name.txt) " | ./../gram2_test.native
-echo "Not expected to work"
+#echo " $(cat largetest03name.txt) " | ./../gram2_test.native
