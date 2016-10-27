@@ -23,8 +23,23 @@ let rec eval_compare = function
 	| Operator(op, e, f) -> match op with
 							|Leq -> eval_compare e <= eval_compare f
 							|Geq -> eval_compare e >= eval_compare f
-							|Equal -> eval_compare e = eval_compare f
+							|Equal -> eval_compare e == eval_compare f
 							|Noteq -> eval_compare e != eval_compare f;;
+
+(*
+let rec eval_condition = function
+	| While(e,c) -> let boolean = eval_logic e in
+					let c' = eval_arithmetic c in
+					if boolean then eval_condition(While(e,c))
+								else ()
+	| If(e,c) -> let boolean = eval_logic e in
+				 let c' = eval_arithmetic c in
+				 if boolean then c' else ()
+	| Else(e,c,d) -> let boolean = eval_logic e in
+				   	 let c' = eval_arithmetic c in
+					 let d' = eval_arithmetic d in
+				   	 if boolean then c' else d';;
+*)
 
 let rec eval_other = function
 	| Let(v, e, c) -> failwith "Not implemented"
