@@ -11,8 +11,11 @@ let newline = '\r' | '\n' | "\r\n"
 
 rule read = 
 	parse
-	| int {INT}		
+	| int {INT (int_of_string(Lexing.lexeme lexbuf))}
+	| "true" {TRUE (bool_of_string(Lexing.lexeme lexbuf))}
+	| "false" {FALSE (bool_of_string(Lexing.lexeme lexbuf))}		
 	| "read_int" {READINT}	| "print_int" {PRINTINT}
+	| "main" {MAIN}
 	| ';' {SEMICOLON}		| ',' {COMMA}
 	| '{' {LBRACE}		| '}' {RBRACE}
 	| '(' {LBRACKET}	| ')' {RBRACKET}
@@ -27,7 +30,7 @@ rule read =
 	| "&&" {AND}		| "||" {OR}		| '!' {NOT}
 	| "<=" {LEQ}		| ">=" {GEQ}		| "==" {EQUAL}		| "!=" {NOTEQ}
 	| '=' {ASG}		| '&' {DEREF}		
-	| id {VARNAME}
+	| id {VARNAME (Lexing.lexeme lexbuf)}
 	| comment_line {read lexbuf}
 	| white {read lexbuf}
 	| newline {read lexbuf}
