@@ -1,4 +1,6 @@
 #!/bin/bash
+
+<<COMMENT
 echo "============="
 echo "Parsing Tests"
 echo "============="
@@ -50,6 +52,7 @@ echo "Large Test 01"
 echo " "
 echo "Large Test 02"
 #echo " $(cat largetest02name.txt) " | ./../gram2_test.native
+COMMENT
 
 echo "================ "
 echo "Evaluation Tests"
@@ -57,35 +60,42 @@ echo "================ "
 
 echo "Small Test 11"
 echo " $(cat test11name.txt) " | ./../gram2_test.native
-echo " Expected Value: 3"
+echo "Expected Value: 3"
 
 echo " "
 echo "Small Test 12"
-#echo " $(cat test12name.txt) " | ./../gram2_test.native
+echo " $(cat test12name.txt) " | ./../gram2_test.native
+echo "Expected Value: 5"
 
 echo " "
 echo "Small Test 13"
-#echo " $(cat test13name.txt) " | ./../gram2_test.native
+echo " $(cat test13name.txt) " | ./../gram2_test.native
+echo "Expected Value: 10"
 
 echo " "
 echo "Small Test 14"
-#echo " $(cat test14name.txt) " | ./../gram2_test.native
+echo " $(cat test14name.txt) " | ./../gram2_test.native
+echo "Expected: Stack Overflow"
 
 echo " "
 echo "Small Test 15"
-#echo " $(cat test15name.txt) " | ./../gram2_test.native
+echo " $(cat test15name.txt) " | ./../gram2_test.native
+echo "Expected Value: 120"
 
 echo " "
 echo "Small Test 16"
-#echo " $(cat test16name.txt) " | ./../gram2_test.native
+echo " $(cat test16name.txt) " | ./../gram2_test.native
+echo "Expected Value: 1"
 
 echo " "
 echo "Small Test 17"
-#echo " $(cat test17name.txt) " | ./../gram2_test.native
+echo " $(cat test17name.txt) " | ./../gram2_test.native
+echo "Expected Value: 100000000"
 
 echo " "
 echo "Small Test 18"
-#echo " $(cat test18name.txt) " | ./../gram2_test.native
+echo " $(cat test18name.txt) " | ./../gram2_test.native
+echo "Expected: Stack Overflow"
 
 echo " "
 echo "Small Test 19"
