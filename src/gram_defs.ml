@@ -3,18 +3,22 @@ type operator =
 	|Leq |Geq |Equal |Noteq
 	|And |Or
 
-type variable =
-	| Id of string
+type result =
+	| Intres of int
+	| Boolres of bool
+	| Stringres of string
+	| Unitres of unit
 
 type expression =
+	| Id of string
 	| Seq of expression * expression
-	| Assign of variable * expression
+	| Assign of expression * expression
 
 	(*Valuee and Value Expressions*)
 	| True
 	| False
 	| Const of int
-	| Deref of variable
+	| Deref of expression
 	| Not of expression
 	| Operator of operator * expression * expression
 	
@@ -24,17 +28,16 @@ type expression =
 	| Else of expression * expression * expression
 
 	(*Environment Statements*)
-	| Let of variable * expression * expression
-	| New of variable * expression * expression
+	| Let of expression * expression * expression
+	| New of expression * expression * expression
 
 	(*Input and Output*)
 	| Readint
 	| Printint of expression
 
 	(*Function Application*)
-	| Apply of variable * expression list
-	
+	| Apply of expression * expression list	
 
-type function_def = string * variable list * expression
+type function_def = string * expression list * expression
 
 type program = function_def list
