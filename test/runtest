@@ -99,12 +99,15 @@ echo "Expected: Stack Overflow"
 
 echo " "
 echo "Small Test 19"
-#echo " $(cat test19name.txt) " | ./../gram2_test.native
+echo " $(cat test19name.txt) " | ./../gram2_test.native
+echo "Expected Value: 5"
 
 echo " "
 echo "Small Test 20"
-#echo " $(cat test20name.txt) " | ./../gram2_test.native
+echo " $(cat test20name.txt) " | ./../gram2_test.native
+echo "Expected Value: 1"
 
 echo " "
 echo "Large Test 03"
-#echo " $(cat largetest03name.txt) " | ./../gram2_test.native
+echo " $(cat largetest03name.txt) " | ./../gram2_test.native
+echo "Expected: Prints out the first 50 Fibonacci numbers (not including 0)"
