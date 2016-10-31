@@ -1,12 +1,20 @@
-// Simple if statement
+// A mix of conditional statements
+// With an infinite loop
 main(){
 	var x = 5;
 	var y = 5;
 	
-	if(var x == var y){
-		var x * var y;
+	if(&var x != &var y){
+		var z = &var x * &var y
 	}
 	else{
-		0;
+
+		var y = 1;
+
+		while(&var x >= 1){
+			var y = &var y * &var x	
+		};
+
+		print_int(&var y)
 	}
 }

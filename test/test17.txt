@@ -1,9 +1,21 @@
-// arithmetic and if
+// Large Numbers
 main(){
-	if(5+4 <= 9){
-		9;
-	}
-	else{
-		0;
-	}
+	
+	var sum = 0;
+	var a = 14635;
+	
+	while(&var a >= 0){
+
+		var sum = &var sum + &var a;
+		var a = &var a - 1
+
+	};
+
+	if(true){
+		var a = 7098930;
+		var sum = &var sum - &var a
+	};
+
+	print_int(&var sum)
+
 }

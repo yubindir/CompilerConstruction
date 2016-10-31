@@ -1,7 +1,12 @@
 // Simple if statement
 main(){
-	5 + 3;
-	8 - 2;
-	2 * 2;
-	4 / 2;
+
+	var a = 5;
+	if(&var a <= 10){
+		print_int(&var a)
+	}
+	else{
+		print_int(0)
+	}
+
 }

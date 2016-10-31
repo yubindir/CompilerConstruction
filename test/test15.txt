@@ -1,6 +1,22 @@
-// Complex arithmetic
+// A mix of conditional statements
 main(){
-	5 + 4 + 3;
-	10 * 3 / 6;
-	1 - 0 + 9;
+	var x = 5;
+	var y = 5;
+	
+	if(&var x != &var y){
+		var z = &var x * &var y
+	}
+	else{
+
+		var y = 1;
+
+		while(&var x >= 1){
+			var y = &var y * &var x;
+
+			// And with this, infinite loop stops
+			var x = &var x - 1			
+		};
+
+		print_int(&var y)
+	}
 }

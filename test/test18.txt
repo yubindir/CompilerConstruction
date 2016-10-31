@@ -1,9 +1,20 @@
-// arithmetic and while
+// Even LARGER numbers
 main(){
-	
-	while(4+0-4){
-		5+4;
-		3+7;
-	}
 
+	var large = 1000000;
+	var i = 1;
+	var store = 10;
+
+	while(&var i <= &var large){
+
+		var store = &var store * 2;
+		var store = &var store + &var i;
+
+		if(&var store >= 100000000){
+			var store = &var store * &var i / 5
+		}
+
+	};
+
+	print_int(&var store)
 }
