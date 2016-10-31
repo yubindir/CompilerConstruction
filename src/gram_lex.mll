@@ -27,8 +27,8 @@ rule read =
 	| "if" {IF}		| "else" {ELSE}
 	
 	| '+' {PLUS}		| '-' {MINUS}		| '*' {TIMES}		| '/' {DIVIDE}
-	| "&&" {AND}		| "||" {OR}		| '!' {NOT}
 	| "<=" {LEQ}		| ">=" {GEQ}		| "==" {EQUAL}		| "!=" {NOTEQ}
+	| "&&" {AND}		| "||" {OR}		| '!' {NOT}
 	| '=' {ASG}		| '&' {DEREF}		
 	| id {VARNAME (Lexing.lexeme lexbuf)}
 	| comment_line {read lexbuf}
