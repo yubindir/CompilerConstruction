@@ -125,3 +125,8 @@ echo " "
 echo "Small Test 22"
 echo " $(cat test22name.txt) " | ./../gram2_test.native
 echo "Expected Value: 10"
+
+echo " "
+echo "Small Test 23"
+echo " $(cat test23name.txt) " | ./../gram2_test.native
+echo "Expected Value: 5"

@@ -1,0 +1,10 @@
+// Slightly more compound LET expression
+main(){ 
+	var a = 5;
+
+	let var b = 5 in {
+	let var a = 4 in {
+	&var b + &var a}};
+
+	print_int(&var a)
+}
