@@ -9,7 +9,7 @@ let extract_unit (Unitres(u)) = u;;
 let extract_list (Listres(l)) = l;;
 
 let rec removefrom x = function
-	| [] -> failwith "Variable not defined"
+	| [] -> Unitres(())
 	| (elem, value) :: env -> if x = elem then value else removefrom x env;;
 
 let rec printenv = function
@@ -29,7 +29,8 @@ let rec eval_exp env = function
 						  Listres(envlist) *)
 (*	| Deref(var) -> Hashtbl.find store (extract_string(eval_exp env var)) *)
 	| Deref(var) -> let v = extract_string(eval_exp env var) in
-					removefrom v env  
+					if removefrom v env = Unitres(()) then Hashtbl.find store (extract_string(eval_exp env var)) else
+					removefrom v env
 
 	| True -> Boolres(true)
 	| False -> Boolres(false)
