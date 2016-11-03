@@ -8,6 +8,7 @@ type result =
 	| Boolres of bool
 	| Stringres of string
 	| Unitres of unit
+	| Listres of (string * result) list
 
 type expression =
 	| Id of string
