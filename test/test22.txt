@@ -1,0 +1,12 @@
+// Compound LET expression
+main(){ 
+	let var a = 3 in{
+	let var b = &var a + 1 in{
+	let var a = 6 in{
+	let var b = &var a + &var b in{
+	print_int(&var b)
+	}
+	}
+	}
+	}
+}

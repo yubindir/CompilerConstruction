@@ -111,3 +111,17 @@ echo " "
 echo "Large Test 03"
 echo " $(cat largetest03name.txt) " | ./../gram2_test.native
 echo "Expected: Prints out the first 50 Fibonacci numbers (not including 0)"
+
+echo "================ "
+echo "Environment Tests"
+echo "================ "
+
+echo " "
+echo "Small Test 21"
+echo " $(cat test21name.txt) " | ./../gram2_test.native
+echo "Expected Value: 3"
+
+echo " "
+echo "Small Test 22"
+echo " $(cat test22name.txt) " | ./../gram2_test.native
+echo "Expected Value: 10"

@@ -1,0 +1,4 @@
+// Simple LET expression
+main(){ 
+	let var a = 3 in {print_int(&var a)}
+}
