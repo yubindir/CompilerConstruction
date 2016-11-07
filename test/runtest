@@ -138,4 +138,4 @@ echo "================= "
 echo " "
 echo "Small Test 30"
 echo " $(cat test30name.txt) " | ./../gram2_test.native
-echo ""
+echo "Unoptimised number of steps: 21"
