@@ -1,5 +1,6 @@
 open Gram_lex
 open Gram2_eval
+open Gram_optimiser
 open Lexing 
 open Printf
 open String
@@ -25,7 +26,7 @@ let load_file f =
   close_in ic;
   (s)
 
-let _ = read_line() |> String.trim |> load_file |> Lexing.from_string  |> parse_with_error |> eval_prog;
+let _ = read_line() |> String.trim |> load_file |> Lexing.from_string  |> parse_with_error |> opt_prog |> eval_prog;
 	print_newline ();
 
 
