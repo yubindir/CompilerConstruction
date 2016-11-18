@@ -1,0 +1,33 @@
+open Gram3_defs;;
+
+let getInt (Int(x)) = x;;
+let getBool (Bool(x)) = x;;
+let getStr (Str(x)) = x;;
+let getUnit (Unit(x)) = x;;
+
+(* UGLY  but it works *)
+let lessThan x y =
+	let (a,b) = (x,y) in
+	match (a,b) with
+	| (Bool(e1), Bool(e2)) -> e1 <= e2
+	| (Int(e1), Int(e2)) -> e1 <= e2;;
+let greaterThan x y =
+	let (a,b) = (x,y) in
+	match (a,b) with
+	| (Bool(e1), Bool(e2)) -> e1 >= e2
+	| (Int(e1), Int(e2)) -> e1 >= e2;;
+let equal x y =
+	let (a,b) = (x,y) in
+	match (a,b) with
+	| (Bool(e1), Bool(e2)) -> e1 == e2
+	| (Int(e1), Int(e2)) -> e1 == e2;;
+let notEqual x y =
+	let (a,b) = (x,y) in
+	match (a,b) with
+	| (Bool(e1), Bool(e2)) -> e1 != e2
+	| (Int(e1), Int(e2)) -> e1 != e2;;
+
+(*For looking in an environment*)
+let rec lookfor env x = match env with
+	| [] -> Unit(())
+	| ((e,v)::xs) -> if x = e then v else lookfor xs x;;
