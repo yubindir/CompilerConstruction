@@ -1,0 +1,56 @@
+#!/bin/bash
+
+echo "============= "
+echo "Parsing Tests"
+echo "============= "
+
+echo ""
+echo "Parse Test 01"
+echo "$(cat name_parseTest01.txt) " | ./../gram3_test.native
+echo "Expected to parse correctly"
+
+echo ""
+echo "Parse Test 02"
+echo "$(cat name_parseTest02.txt) " | ./../gram3_test.native
+echo "Expected to parse correctly"
+
+echo ""
+echo "Parse Test 03"
+echo "$(cat name_parseTest03.txt) " | ./../gram3_test.native
+echo "Expected to parse correctly"
+
+echo ""
+echo "Parse Test 04"
+echo "$(cat name_parseTest04.txt) " | ./../gram3_test.native
+echo "Expected to fail parsing"
+
+echo " "
+echo "================ "
+echo "Evaluation Tests"
+echo "================ "
+
+echo ""
+echo "Evaluation Test 01"
+echo "$(cat name_evalTest01.txt) " | ./../gram3_test.native
+echo "Expected values: 3, -1, 30, 0, 0, 0, 15, 2"
+
+echo ""
+echo "Evaluation Test 02"
+echo "$(cat name_evalTest02.txt) " | ./../gram3_test.native
+echo "Expected value: 1"
+
+echo ""
+echo "Evaluation Test 03"
+echo "$(cat name_evalTest03.txt) " | ./../gram3_test.native
+echo "Expected value: 10"
+
+echo " "
+echo "===================== "
+echo "Code Generation Tests"
+echo "===================== "
+
+echo ""
+echo "Generation Test 01"
+echo "$(cat name_genTest12.txt) " | ./../gram3_test.native
+
+

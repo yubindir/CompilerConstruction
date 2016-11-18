@@ -1,0 +1,40 @@
+// Evaluating Conditional Statements
+
+main(){
+	if(3 >= 2){
+		if(4 <= 0){
+			print_int(0)
+		}
+		else{
+			if(true == true){
+				if(false != false){
+					print_int(0)
+				}
+				else{
+					if(true && true){
+						if(false || false){
+							print_int(0)
+						}
+						else{
+							if(!false){
+								print_int(1)
+							}
+							else{
+								print_int(0)
+							}
+						}
+					}
+					else{
+						print_int(0)
+					}
+				}
+			}
+			else{
+				print_int(0)
+			}
+		}
+	}
+	else{
+		print_int(0)
+	}
+}

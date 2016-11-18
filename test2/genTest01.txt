@@ -1,0 +1,6 @@
+// Generating code for Basic Operations
+
+main(){
+	var a = 5;
+	print_int(&a); newline()
+}

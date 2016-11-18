@@ -1,0 +1,24 @@
+// Parsing Conditional Statements
+
+main(){
+	if(true){
+		while(false){
+			if(false){
+				false
+			}
+			else{
+				true
+			}
+		}
+	}
+	else{
+		if(!false){
+			true
+		}
+		else{
+			while(false){
+				true && true
+			}
+		}
+	}
+}

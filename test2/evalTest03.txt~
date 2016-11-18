@@ -1,0 +1,15 @@
+// Evaluating Variables and Let
+
+main(){
+	var a = 5;
+	var b = true;
+	var c = let x = 1 in {&x + 4};
+	var d = let y = false in {!&y};
+
+	if(&b && &d){
+		print_int(&c + &a)
+	}
+	else{
+		print_int(0)
+	}	
+}
