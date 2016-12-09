@@ -79,9 +79,10 @@ let rec codegen symt = function
 		"ld r" ^ (string_of_int (addr3))
 		^ "\n" |> Buffer.add_string gen_code; Int(addr3)
 
-	(**)
+	(*
 	Problem with the boolean operations is that they are cultivated to work for IF statements only.
 	*)
+
 	(*Comparison*)
 	| Operator(Leq,e1,e2) ->
 		let addr1 = codegen symt e1 in
@@ -139,7 +140,7 @@ let rec codegen symt = function
 
 	| While(e1,e2) -> failwith "Not Implemented"
 
-		(**)
+		(*
 		While Loop
 		1. CMP label
 		2. Comparison check
@@ -166,10 +167,12 @@ let rec codegen symt = function
 		codegen symt2 e3
 
 	(*Printing*)
-	| Printint(e1) ->
-		let addr = getInt(codegen symt e1) in
-		print_int(addr); Unit(())
-	| Newline -> Unit(printf("\n"));;
+	| Printint(e1) -> 
+		"call print \n" |> Buffer.add_string gen_code;
+		Unit(())
+	| Newline -> 
+		"call newline \n" |> Buffer.add_string gen_code;
+		Unit(());;
 
 let codegen_func = function
 	| ("main", args, code) -> 
