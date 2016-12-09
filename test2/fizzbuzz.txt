@@ -1,0 +1,60 @@
+main(){
+
+	var count = 1;
+
+	while(&count <= 100){
+
+	var three = &count;
+	var threebool = false;
+
+	while(&three >= 3){
+		var three = &three - 3
+	};
+	
+	if(&three == 0){
+		var threebool = true
+	}
+	else{
+		var threebool = false
+	};
+
+	var five = &count;
+	var fivebool = false;
+
+	while(&five >= 5){
+		var five = &five - 5
+	};
+
+	if(&five == 0){
+		var fivebool = true
+	}
+	else{
+		var fivebool = false
+	};
+
+		if(&threebool && &fivebool){
+			print_int(15);
+			newline()
+		}
+		else{
+				if(&threebool){
+					print_int(3);
+					newline()
+				}
+
+				else{
+					if(&fivebool){
+						print_int(5);
+						newline()
+					}
+					else{
+						print_int(&count);
+						newline()
+					}
+				}
+		};
+
+	var count = &count + 1	
+
+	}
+}
