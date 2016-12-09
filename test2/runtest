@@ -53,4 +53,14 @@ echo ""
 echo "Generation Test 01"
 echo "$(cat name_genTest01.txt) " | ./../gram3_test.native
 
+echo ""
+echo "Generation Test 02"
+echo "$(cat name_genTest02.txt) " | ./../gram3_test.native
 
+echo ""
+echo "Generation Test 03"
+echo "$(cat name_genTest03.txt) " | ./../gram3_test.native
+
+echo ""
+echo "Generation Test 04"
+echo "$(cat name_genTest04.txt) " | ./../gram3_test.native
