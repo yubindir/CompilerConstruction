@@ -1,0 +1,29 @@
+// Generating code for Basic Operations
+
+main(){
+    	
+    if(1 <= 0){
+        print_int(0)
+    }
+
+    else{
+        if(7 >= 10){
+            print_int(0)
+        }   
+
+        else{
+            if(5 != 5){
+                print_int(0)
+            }
+
+            else{
+                if(0 == 0){
+                    print_int(1)
+                }
+                else{
+                    print_int(0)
+                }
+            }
+        }
+    }
+}

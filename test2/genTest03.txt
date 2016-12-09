@@ -1,0 +1,29 @@
+// Generating code for Basic Operations
+
+main(){
+    	
+    if(false){
+        print_int(0)
+    }
+
+    else{
+        if(true && false){
+            print_int(0)
+        }   
+
+        else{
+            if(false || false){
+                print_int(0)
+            }
+
+            else{
+                if(!false){
+                    print_int(1)
+                }
+                else{
+                    print_int(0)
+                }
+            }
+        }
+    }
+}
